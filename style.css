@@ -11,15 +11,13 @@ body,
 }
 body {
   height: 100vh;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
   background: hsl(30, 38%, 92%);
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .container {
-  width: 600px;
+  width: 550px;
   height: 400px;
   margin: auto;
   background: white;
@@ -37,17 +35,23 @@ body {
 .textcontainer {
   width: 50%;
   flex-direction: column;
-  padding: 2em;
-  gap: 1em;
+  padding: 2em 3em 2em 2em;
+  gap: 1.25em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
+
 .category {
   color: hsl(228, 12%, 48%);
   letter-spacing: 0.5em;
+  font-size: 0.8em;
 }
 .productname {
   font-family: "Fraunces", serif;
 }
 .desc {
+  line-height: 1.5em;
+  font-size: 0.9em;
   color: hsl(228, 12%, 48%);
 }
 .pricecon {
@@ -66,9 +70,14 @@ body {
   text-decoration: none;
   color: white;
   text-align: center;
-  padding: 1em 0;
-  border-radius: 1em;
+  padding: 0.75em 0;
+  border-radius: 0.5em;
   background: hsl(158, 36%, 37%);
+  font-size: inherit;
+  font-family: inherit;
+}
+.btn img {
+  margin-right: 1em;
 }
 .btn:hover,
 .btn:active {
