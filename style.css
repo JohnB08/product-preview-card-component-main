@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+.container,
+.textcontainer,
+.pricecon {
+  display: flex;
+}
+body {
+  height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background: hsl(30, 38%, 92%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background: white;
+  border-radius: 2em;
+}
+.imgcontainer {
+  width: 50%;
+  height: 100%;
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+.textcontainer {
+  width: 50%;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1em;
+}
+.category {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.5em;
+}
+.productname {
+  font-family: "Fraunces", serif;
+}
+.desc {
+  color: hsl(228, 12%, 48%);
+}
+.pricecon {
+  align-items: center;
+  gap: 1em;
+}
+.curprice {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 2em;
+  font-family: "Fraunces", serif;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  border-radius: 1em;
+  background: hsl(158, 36%, 37%);
+}
+.btn:hover,
+.btn:active {
+  background: hsl(212, 21%, 14%);
+}
+.attribution {
+  margin-bottom: 2em;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+  }
+  .textcontainer {
+    width: 100%;
+  }
+  .imgcontainer {
+    width: 100%;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 2em;
+  }
+}
